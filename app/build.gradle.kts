@@ -72,22 +72,22 @@ sealed class Version(
 
 val currentVersion: Version = Version.Beta(
     versionMajor = 1,
-    versionMinor = 3,
-    versionPatch = 1,
-    versionBuild = 2
+    versionMinor = 0,
+    versionPatch = 0,
+    versionBuild = 1
 )
 val currentVersionCode = currentVersion.code
 
 android {
     compileSdk = 37
-    namespace = "com.mardous.booming"
+    namespace = "com.fadly.fadence"
 
     defaultConfig {
         minSdk = 26
         targetSdk = 36
 
         applicationId = namespace
-        versionCode = 1310102
+        versionCode = currentVersionCode
         versionName = currentVersion.name
         check(versionCode == currentVersionCode)
     }
@@ -245,7 +245,7 @@ androidComponents {
         variant.outputs.forEach { output ->
             val filter = output.filters.joinToString("-") { it.identifier }
             val abi = filter.ifEmpty { "universal" }
-            output.outputFileName = "BoomingMusic-${output.versionName.get()}-${variant.flavorName}-$abi.apk"
+            output.outputFileName = "FadenceMusic-${output.versionName.get()}-${variant.flavorName}-$abi.apk"
         }
     }
 }

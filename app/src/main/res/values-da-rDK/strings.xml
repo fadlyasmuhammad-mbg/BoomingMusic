@@ -126,7 +126,7 @@
     <string name="permission_bluetooth_description">Appen har brug for tilladelse i nærheden af enheder for at tjekke for bluetooth-enheder</string>
     <string name="permission_bluetooth_denied">Tilladelse nægtet i nærheden af enheder.</string>
     <string name="permission_read_images_title">Læs billeder (valgfrit)</string>
-    <string name="permission_read_images_summary">Denne tilladelse kræves for Booming Music til at finde album cover filer i dine musikmapper. Hvis du ikke planlægger at bruge denne funktion, kan du vælge ikke at give den.</string>
+    <string name="permission_read_images_summary">Denne tilladelse kræves for Fadence Music til at finde album cover filer i dine musikmapper. Hvis du ikke planlægger at bruge denne funktion, kan du vælge ikke at give den.</string>
     <string name="permission_read_images_denied">Du skal give tilladelse til at læse billeder fra enheden.</string>
     <string name="permission_exact_alarms_title">Planlæg nøjagtige alarmer (valgfrit)</string>
     <string name="permission_exact_alarms_description">Tilladelse til at planlægge nøjagtige alarmer er nødvendig for at sovemusikeren kan fungere korrekt</string>
@@ -403,7 +403,7 @@
     <string name="profiles_exported_successfully">Profiles exported successfully.</string>
     <string name="import_profiles">Import profiles</string>
     <string name="select_profiles_to_import">Select profiles to import:</string>
-    <string name="select_a_file_containing_booming_eq_profiles">Select a file containing Booming Music EQ Profiles.</string>
+    <string name="select_a_file_containing_booming_eq_profiles">Select a file containing Fadence Music EQ Profiles.</string>
     <string name="imported_x_profiles">Imported %d profiles.</string>
     <string name="no_profile_imported">No profile imported.</string>
     <string name="import_autoeq_profile">Import AutoEq profile</string>
@@ -509,17 +509,17 @@
     <string name="write_an_email">Skriv en e-mail</string>
     <string name="support_development">Støt udvikling</string>
     <string name="help_with_translations">Hjælp med oversættelser</string>
-    <string name="help_with_translations_summary">Du kan bidrage til projektet ved at hjælpe med at oversætte Booming Music til andre sprog.</string>
+    <string name="help_with_translations_summary">Du kan bidrage til projektet ved at hjælpe med at oversætte Fadence Music til andre sprog.</string>
     <string name="report_bugs">Rapporter fejl</string>
     <string name="report_bugs_summary">Rapporter fejl eller anmod om nye funktioner.</string>
     <string name="share_app">Del denne app</string>
     <string name="share_app_summary">Du kan hjælpe denne app med at vokse, hvis du deler den med venner.</string>
     <string name="send_invitation_message">Send invitationsbesked</string>
-    <string name="invitation_message_content">Hi. Tjek Booming Music! Den bedste app til at lytte til lokal musik på Android. Du kan downloade den herfra: %s</string>
+    <string name="invitation_message_content">Hi. Tjek Fadence Music! Den bedste app til at lytte til lokal musik på Android. Du kan downloade den herfra: %s</string>
     <!-- Bug report -->
     <!-- SAF -->
     <string name="saf_access_required_title">Lagerplads Påkrævet</string>
-    <string name="saf_access_required_message">Booming Music kræver tilladelse til at få adgang til disse filer. Vælg rodmappen, hvor dine musikfiler er gemt.</string>
+    <string name="saf_access_required_message">Fadence Music kræver tilladelse til at få adgang til disse filer. Vælg rodmappen, hvor dine musikfiler er gemt.</string>
     <string name="saf_show_files_button">Vis filer</string>
     <string name="saf_error_uri">Kan ikke hente SAF URI</string>
     <string name="saf_write_failed">Filskrivning mislykkedes: %s</string>
@@ -540,7 +540,7 @@
     <string name="advanced_summary">In-app sprog og andre indstillinger for avancerede brugere.</string>
     <string name="update_title">Opdater</string>
     <string name="about_title">Om</string>
-    <string name="about_summary">Booming Music %s, touch for more info.</string>
+    <string name="about_summary">Fadence Music %s, touch for more info.</string>
     <!-- Preference headers -->
     <string name="general_header">Generelt</string>
     <string name="library_header">Bibliotek</string>
@@ -712,7 +712,7 @@
     <string name="online_album_covers_title">Download manglende albumomslag</string>
     <string name="online_album_covers_summary">Downloadede billeder er ikke indlejret i lydfiler; de er kun synlige i appen. Dette afhænger af din metadata download politik.</string>
     <string name="delete_downloaded_lyrics_title">Slet downloadede sangtekster</string>
-    <string name="delete_downloaded_lyrics_summary">Kun sangtekster hentet af Booming Music. Påvirker ikke sangtekster indlejret i ID3v2 tags eller LRC filer.</string>
+    <string name="delete_downloaded_lyrics_summary">Kun sangtekster hentet af Fadence Music. Påvirker ikke sangtekster indlejret i ID3v2 tags eller LRC filer.</string>
     <string name="lyrics_cleared">Sangtekster ryddet.</string>
     <!-- Library preferences -->
     <string name="ignore_articles_when_sorting_title">Ignorér artikler ved sortering</string>

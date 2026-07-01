@@ -126,7 +126,7 @@
     <string name="permission_bluetooth_description">O aplicativo precisa de permissão de dispositivos próximos para verificar por dispositivos bluetooth</string>
     <string name="permission_bluetooth_denied">Permissão de dispositivos próximos negada.</string>
     <string name="permission_read_images_title">Ler imagens (opcional)</string>
-    <string name="permission_read_images_summary">Esta permissão é necessária para que o Booming Music encontre ficheiros de capas de álbuns nas suas pastas de música. Se não pretende usar este recurso, pode optar por não conceder a permissão.</string>
+    <string name="permission_read_images_summary">Esta permissão é necessária para que o Fadence Music encontre ficheiros de capas de álbuns nas suas pastas de música. Se não pretende usar este recurso, pode optar por não conceder a permissão.</string>
     <string name="permission_read_images_denied">Precisa conceder permissão para ler imagens do dispositivo.</string>
     <string name="permission_exact_alarms_title">Programar alarmes exatos (opcional)</string>
     <string name="permission_exact_alarms_description">Permissão para agendar alarmes exatos é necessária para que o temporizador da suspensão funcione corretamente</string>
@@ -411,7 +411,7 @@
     <string name="profiles_exported_successfully">Perfis exportados com sucesso.</string>
     <string name="import_profiles">Importar perfis</string>
     <string name="select_profiles_to_import">Selecione perfis para importar:</string>
-    <string name="select_a_file_containing_booming_eq_profiles">Selecionar um ficheiro a conter Perfis de Equalizador Booming Music.</string>
+    <string name="select_a_file_containing_booming_eq_profiles">Selecionar um ficheiro a conter Perfis de Equalizador Fadence Music.</string>
     <string name="imported_x_profiles">Foram importados %d perfis.</string>
     <string name="no_profile_imported">Nenhum perfil importado.</string>
     <string name="import_autoeq_profile">Importe perfil AutoEq</string>
@@ -512,22 +512,22 @@
     <string name="mardous_summary">Programador Líder</string>
     <string name="contributors">Colaboradores</string>
     <string name="translators_title">Tradutores</string>
-    <string name="translators_summary">Obrigado a todos que fazem Booming Music disponível em vários idiomas.</string>
+    <string name="translators_summary">Obrigado a todos que fazem Fadence Music disponível em vários idiomas.</string>
     <string name="view_profile_on_github">Ver perfil no GitHub</string>
     <string name="write_an_email">Escreva um e-mail</string>
     <string name="support_development">Apoie o desenvolvimento</string>
     <string name="help_with_translations">Ajuda com traduções</string>
-    <string name="help_with_translations_summary">Você pode contribuir para o projeto, ajudando a traduzir Booming Music para outras línguas.</string>
+    <string name="help_with_translations_summary">Você pode contribuir para o projeto, ajudando a traduzir Fadence Music para outras línguas.</string>
     <string name="report_bugs">Relatar erros</string>
     <string name="report_bugs_summary">Reporte erros ou solicite novas funcionalidades.</string>
     <string name="share_app">Compartilhar este aplicativo</string>
     <string name="share_app_summary">Você pode ajudar este aplicativo a crescer se você compartilhá-lo com os amigos.</string>
     <string name="send_invitation_message">Enviar mensagem de convite</string>
-    <string name="invitation_message_content">Oi. Confira o Booming Music! O melhor aplicativo para ouvir música local no Android. Você pode baixá-lo aqui: %s</string>
+    <string name="invitation_message_content">Oi. Confira o Fadence Music! O melhor aplicativo para ouvir música local no Android. Você pode baixá-lo aqui: %s</string>
     <!-- Bug report -->
     <!-- SAF -->
     <string name="saf_access_required_title">Acesso ao armazenamento necessário</string>
-    <string name="saf_access_required_message">O Booming Music requer permissão para acessar esses arquivos. Por favor, selecione a pasta onde os seus arquivos de música são armazenados.</string>
+    <string name="saf_access_required_message">O Fadence Music requer permissão para acessar esses arquivos. Por favor, selecione a pasta onde os seus arquivos de música são armazenados.</string>
     <string name="saf_show_files_button">Mostrar arquivos</string>
     <string name="saf_error_uri">Não é possível obter URI SAF</string>
     <string name="saf_write_failed">Falha ao escrever arquivo: %s</string>
@@ -548,7 +548,7 @@
     <string name="advanced_summary">Idioma no aplicativo e outras configurações para usuários avançados.</string>
     <string name="update_title">Atualização</string>
     <string name="about_title">Sobre</string>
-    <string name="about_summary">Booming Music %s, toque para obter mais informações.</string>
+    <string name="about_summary">Fadence Music %s, toque para obter mais informações.</string>
     <!-- Preference headers -->
     <string name="general_header">Gerais</string>
     <string name="library_header">Biblioteca</string>
@@ -939,7 +939,7 @@
     <string name="ttml_file_lyrics">TTML</string>
     <string name="lrc_file_lyrics">LRC</string>
     <string name="undo_changes">Desfazer alterações</string>
-    <string name="cannot_edit_lyrics_file">Não é possível editar o conteúdo do ficheiro diretamente no Booming Music.</string>
+    <string name="cannot_edit_lyrics_file">Não é possível editar o conteúdo do ficheiro diretamente no Fadence Music.</string>
     <string name="lyrics_by_x">Letra de %s</string>
     <string name="preferred_lyrics_file_format_title">Formato de ficheiro preferido</string>
     <string name="preferred_lyrics_file_format_summary">Se uma música tiver ficheiros de letras em formatos diferentes, esta opção permite que escolha qual terá prioridade.</string>

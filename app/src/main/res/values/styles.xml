@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Booming" parent="Base.Theme.Booming"/>
+    <style name="Theme.Fadence" parent="Base.Theme.Fadence"/>
 
-    <style name="Theme.Booming.Light" parent="Base.Theme.Booming.Light"/>
+    <style name="Theme.Fadence.Light" parent="Base.Theme.Fadence.Light"/>
 
-    <style name="Theme.Booming.Black" parent="Base.Theme.Booming.Black"/>
+    <style name="Theme.Fadence.Black" parent="Base.Theme.Fadence.Black"/>
 
-    <style name="Theme.Booming.FollowSystem" parent="Base.Theme.Booming.Adaptive"/>
+    <style name="Theme.Fadence.FollowSystem" parent="Base.Theme.Fadence.Adaptive"/>
 
-    <style name="Theme.Booming.SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Fadence.SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/splash</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
-    <style name="Widget.Booming.Expressive.Button" parent="Widget.Material3Expressive.Button">
+    <style name="Widget.Fadence.Expressive.Button" parent="Widget.Material3Expressive.Button">
         <item name="iconGravity">textStart</item>
     </style>
 
-    <style name="Widget.Booming.Expressive.Button.Tonal" parent="Widget.Material3Expressive.Button.TonalButton">
+    <style name="Widget.Fadence.Expressive.Button.Tonal" parent="Widget.Material3Expressive.Button.TonalButton">
         <item name="iconGravity">textStart</item>
     </style>
 

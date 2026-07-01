@@ -1,23 +1,23 @@
 <div align="center">
 
-<img src="metadata/en-US/images/icon.png" width="160" height="160" alt="Booming Music icon">
+<img src="metadata/en-US/images/icon.png" width="160" height="160" alt="Fadence Music icon">
 
-# 🎵 Booming Music
+# 🎵 Fadence Music
 
 ### Modern design. Pure sound. Fully yours.
 
-[![Latest Release](https://img.shields.io/github/v/release/mardous/BoomingMusic?style=for-the-badge&label=Release&logo=github)](https://github.com/mardous/BoomingMusic/releases/latest)
-[![F-Droid version](https://img.shields.io/f-droid/v/com.mardous.booming?style=for-the-badge&label=F-Droid&logo=fdroid)](https://f-droid.org/packages/com.mardous.booming/)
-[![Downloads](https://img.shields.io/github/downloads/mardous/BoomingMusic/total?style=for-the-badge&logo=github&label=Downloads)](https://github.com/mardous/BoomingMusic/releases)
-[![License: GPL v3](https://img.shields.io/github/license/mardous/BoomingMusic?style=for-the-badge&color=orange&label=License&logo=gnu)](LICENSE.txt)
+[![Latest Release](https://img.shields.io/github/v/release/fadlyasmuhammad-mbg/BoomingMusic?style=for-the-badge&label=Release&logo=github)](https://github.com/fadlyasmuhammad-mbg/BoomingMusic/releases/latest)
+[![F-Droid version](https://img.shields.io/f-droid/v/com.fadly.fadence?style=for-the-badge&label=F-Droid&logo=fdroid)](https://f-droid.org/packages/com.fadly.fadence/)
+[![Downloads](https://img.shields.io/github/downloads/fadlyasmuhammad-mbg/BoomingMusic/total?style=for-the-badge&logo=github&label=Downloads)](https://github.com/fadlyasmuhammad-mbg/BoomingMusic/releases)
+[![License: GPL v3](https://img.shields.io/github/license/fadlyasmuhammad-mbg/BoomingMusic?style=for-the-badge&color=orange&label=License&logo=gnu)](LICENSE.txt)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor_Covenant-2.1-4baaaa.svg?style=for-the-badge&logo=contributorcovenant)](CODE_OF_CONDUCT.md)
 [![Telegram Channel](https://img.shields.io/badge/Telegram-Join_Chat-blue?style=for-the-badge&logo=telegram)](https://t.me/mardousdev)
 
-<a href="https://github.com/mardous/BoomingMusic/releases"><img src="assets/badge-github.png" height="60" alt="GitHub Release"></a>
-<a href="https://f-droid.org/packages/com.mardous.booming/"><img src="assets/badge-fdroid.png" height="60" alt="F-Droid"></a>
-<a href="https://apt.izzysoft.de/packages/com.mardous.booming/"><img src="assets/badge-izzyondroid.png" height="60" alt="IzzyOnDroid"></a>
-<a href="https://www.openapk.net/boomingmusic/com.mardous.booming/"><img src="assets/badge-openapk.png" height="60" alt="OpenAPK"></a>
-<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/mardous/BoomingMusic/"><img src="assets/badge-obtainium.png" height="60" alt="Obtainium"></a>
+<a href="https://github.com/fadlyasmuhammad-mbg/BoomingMusic/releases"><img src="assets/badge-github.png" height="60" alt="GitHub Release"></a>
+<a href="https://f-droid.org/packages/com.fadly.fadence/"><img src="assets/badge-fdroid.png" height="60" alt="F-Droid"></a>
+<a href="https://apt.izzysoft.de/packages/com.fadly.fadence/"><img src="assets/badge-izzyondroid.png" height="60" alt="IzzyOnDroid"></a>
+<a href="https://www.openapk.net/boomingmusic/com.fadly.fadence/"><img src="assets/badge-openapk.png" height="60" alt="OpenAPK"></a>
+<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/fadlyasmuhammad-mbg/BoomingMusic/"><img src="assets/badge-obtainium.png" height="60" alt="Obtainium"></a>
 
 </div>
 
@@ -103,27 +103,27 @@
 
 ## 🔗 Useful Links
 
-- 🔐 **[Requested Permissions](https://github.com/mardous/BoomingMusic/wiki/Advanced-Info#-permissions)**  
+- 🔐 **[Requested Permissions](https://github.com/fadlyasmuhammad-mbg/BoomingMusic/wiki/Advanced-Info#-permissions)**  
   What the app needs and why
 
-- 🚘 **[Android Auto Setup](https://github.com/mardous/BoomingMusic/wiki/Advanced-Info#-android-auto-setup)**  
+- 🚘 **[Android Auto Setup](https://github.com/fadlyasmuhammad-mbg/BoomingMusic/wiki/Advanced-Info#-android-auto-setup)**  
   How to enable and troubleshoot
 
-- 🎧 **[Supported Formats](https://github.com/mardous/BoomingMusic/wiki/Advanced-Info#-supported-formats)**  
+- 🎧 **[Supported Formats](https://github.com/fadlyasmuhammad-mbg/BoomingMusic/wiki/Advanced-Info#-supported-formats)**  
   Compatible audio formats
 
-- 💬 **[Community](https://github.com/mardous/BoomingMusic/wiki/Community)**  
+- 💬 **[Community](https://github.com/fadlyasmuhammad-mbg/BoomingMusic/wiki/Community)**  
   Users and contributors
 
 - 🌐 **[Translations](https://hosted.weblate.org/projects/booming-music/)**  
-  Help us translate Booming Music into your language
+  Help us translate Fadence Music into your language
 
-- ❓ **[FAQ](https://github.com/mardous/BoomingMusic/wiki/FAQ)**  
+- ❓ **[FAQ](https://github.com/fadlyasmuhammad-mbg/BoomingMusic/wiki/FAQ)**  
   Common questions
 
 ## 🤝 Contributing
 
-Booming Music is open-source — contributions are **always welcome!**
+Fadence Music is open-source — contributions are **always welcome!**
 Check the [Contributing Guide](CONTRIBUTING.md) for details.
 
 If you enjoy the app or want to support its development, give the repo a ⭐ — it really helps!
@@ -138,11 +138,11 @@ You can also:
 
 ## 💖 Support Development
 
-Booming Music is an open-source project developed and maintained with passion in my spare time.
+Fadence Music is an open-source project developed and maintained with passion in my spare time.
 If you enjoy the app and the free features it offers, please consider supporting me to help cover
 development costs and dedicate more time to new features.
 
-Your support is greatly appreciated and keeps me motivated to continue improving Booming Music!
+Your support is greatly appreciated and keeps me motivated to continue improving Fadence Music!
 
 <div align="center">
 

@@ -403,7 +403,7 @@
     <string name="profiles_exported_successfully">Profiles exported successfully.</string>
     <string name="import_profiles">Import profiles</string>
     <string name="select_profiles_to_import">Select profiles to import:</string>
-    <string name="select_a_file_containing_booming_eq_profiles">Select a file containing Booming Music EQ Profiles.</string>
+    <string name="select_a_file_containing_booming_eq_profiles">Select a file containing Fadence Music EQ Profiles.</string>
     <string name="imported_x_profiles">Imported %d profiles.</string>
     <string name="no_profile_imported">No profile imported.</string>
     <string name="import_autoeq_profile">Import AutoEq profile</string>
@@ -509,17 +509,17 @@
     <string name="write_an_email">Kirjoita sähköposti</string>
     <string name="support_development">Tue kehitystä</string>
     <string name="help_with_translations">Auta käännösten kanssa</string>
-    <string name="help_with_translations_summary">Voit osallistua projektiin auttamalla kääntämään Booming Music muille kielille.</string>
+    <string name="help_with_translations_summary">Voit osallistua projektiin auttamalla kääntämään Fadence Music muille kielille.</string>
     <string name="report_bugs">Ilmoita virheistä</string>
     <string name="report_bugs_summary">Ilmoita virheistä tai pyydä uusia ominaisuuksia.</string>
     <string name="share_app">Jaa tämä sovellus</string>
     <string name="share_app_summary">Voit auttaa tätä sovellusta kasvamaan, jos jaat sen ystäviesi kanssa.</string>
     <string name="send_invitation_message">Lähetä kutsu viesti</string>
-    <string name="invitation_message_content">Hei. Tsekkaa Booming Music! Paras sovellus kuunnella paikallista musiikkia Androidissa. Voit ladata sen täältä: %s</string>
+    <string name="invitation_message_content">Hei. Tsekkaa Fadence Music! Paras sovellus kuunnella paikallista musiikkia Androidissa. Voit ladata sen täältä: %s</string>
     <!-- Bug report -->
     <!-- SAF -->
     <string name="saf_access_required_title">Tallennustilan Käyttö Vaaditaan</string>
-    <string name="saf_access_required_message">Booming Music vaatii luvan käyttää näitä tiedostoja. Valitse pääkansio johon musiikkitiedostot on tallennettu.</string>
+    <string name="saf_access_required_message">Fadence Music vaatii luvan käyttää näitä tiedostoja. Valitse pääkansio johon musiikkitiedostot on tallennettu.</string>
     <string name="saf_show_files_button">Näytä tiedostot</string>
     <string name="saf_error_uri">SAF URI ei saa</string>
     <string name="saf_write_failed">Tiedoston kirjoittaminen epäonnistui: %s</string>
@@ -712,7 +712,7 @@
     <string name="online_album_covers_title">Lataa puuttuvat albumin kannet</string>
     <string name="online_album_covers_summary">Ladattuja kuvia ei ole upotettu äänitiedostoihin, ne näkyvät vain sovelluksessa. Tämä riippuu metadatan latauskäytännöstäsi.</string>
     <string name="delete_downloaded_lyrics_title">Poista ladatut sanoitukset</string>
-    <string name="delete_downloaded_lyrics_summary">Vain Booming Musicin lataamat sanoitukset. Ei vaikuta sanoituksiin, jotka on upotettu ID3v2-tageihin tai LRC-tiedostoihin.</string>
+    <string name="delete_downloaded_lyrics_summary">Vain Fadence Musicin lataamat sanoitukset. Ei vaikuta sanoituksiin, jotka on upotettu ID3v2-tageihin tai LRC-tiedostoihin.</string>
     <string name="lyrics_cleared">Sanoitukset tyhjennetty.</string>
     <!-- Library preferences -->
     <string name="ignore_articles_when_sorting_title">Ohita artikkelit lajiteltaessa</string>
