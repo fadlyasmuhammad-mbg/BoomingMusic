@@ -176,7 +176,7 @@ android {
 
             reset()
             include("arm64-v8a", "armeabi-v7a", "x86_64", "x86")
-            isUniversalApk = true
+            isUniversalApk = false
         }
     }
     packaging {

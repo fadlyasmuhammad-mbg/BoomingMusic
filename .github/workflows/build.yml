@@ -49,13 +49,13 @@ jobs:
             find "${APK_DIRECTORY}" \
               -maxdepth 1 \
               -type f \
-              -name '*-universal.apk' \
+              -name '*-arm64-v8a.apk' \
               -print \
               -quit
           )"
 
           if [ -z "${APK_SOURCE}" ]; then
-            echo "ARM64 normal release APK was not found."
+            echo "ARM64-v8a normal release APK was not found."
             echo "Available APK files:"
 
             find app/build/outputs/apk \
@@ -67,7 +67,7 @@ jobs:
           fi
 
           SHORT_SHA="${GITHUB_SHA::7}"
-          APK_NAME="FadenceMusic-${GITHUB_RUN_NUMBER}-${SHORT_SHA}-normal-universal-release.apk"
+          APK_NAME="FadenceMusic-${GITHUB_RUN_NUMBER}-${SHORT_SHA}-normal-arm64-v8a-release.apk"
           APK_FILE="output/${APK_NAME}"
 
           mkdir -p output
