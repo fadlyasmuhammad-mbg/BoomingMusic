@@ -38,10 +38,10 @@ class AppTheme private constructor(
         get() = id == GeneralTheme.BLACK
 
     enum class Mode(@StyleRes val themeRes: Int) {
-        Light(R.style.Theme_Booming_Light),
-        Dark(R.style.Theme_Booming),
-        Black(R.style.Theme_Booming_Black),
-        FollowSystem(R.style.Theme_Booming_FollowSystem)
+        Light(R.style.Theme_Fadence_Light),
+        Dark(R.style.Theme_Fadence),
+        Black(R.style.Theme_Fadence_Black),
+        FollowSystem(R.style.Theme_Fadence_FollowSystem)
     }
 
     companion object {
