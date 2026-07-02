@@ -33,14 +33,12 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -87,12 +85,10 @@ import com.fadly.fadence.extensions.toChooser
 import com.fadly.fadence.extensions.tryStartActivity
 import com.fadly.fadence.ui.component.compose.CollapsibleAppBarScaffold
 import com.fadly.fadence.util.Constants.AUTHOR_GITHUB_URL
-import com.fadly.fadence.util.Constants.DONATION_LINK
 import com.fadly.fadence.util.Constants.DOWNLOAD_URL
 import com.fadly.fadence.util.Constants.FAQ_LINK
 import com.fadly.fadence.util.Constants.GITHUB_URL
 import com.fadly.fadence.util.Constants.RELEASES_LINK
-import com.fadly.fadence.util.Constants.SUPPORT_EMAIL
 import com.mikepenz.aboutlibraries.ui.compose.LibraryDefaults
 import com.mikepenz.aboutlibraries.ui.compose.android.produceLibraries
 import com.mikepenz.aboutlibraries.ui.compose.m3.LibrariesContainer
@@ -201,23 +197,33 @@ fun AboutScreen(
                 )
             }
 
-            item { AboutSectionTitle(stringResource(R.string.author)) }
+            item {
+                AboutSectionTitle(
+                    stringResource(R.string.maintainer)
+                )
+            }
 
             item {
                 AuthorSection(
-                    onGitHubClick = { context.openUrl("https://github.com/fadlyas07") },
-                    onEmailClick = {
-                        context.tryStartActivity(
-                            Intent(Intent.ACTION_SENDTO)
-                                .setData("mailto:".toUri())
-                                .putExtra(Intent.EXTRA_EMAIL, arrayOf(SUPPORT_EMAIL))
-                                .putExtra(
-                                    Intent.EXTRA_SUBJECT,
-                                    "Fadence - Support & questions"
-                                )
+                    onGitHubClick = {
+                        context.openUrl(AUTHOR_GITHUB_URL)
+                    }
+                )
+            }
+
+            item {
+                AboutSectionTitle(
+                    stringResource(R.string.original_project)
+                )
+            }
+
+            item {
+                UpstreamSection(
+                    onOpenClick = {
+                        context.openUrl(
+                            "https://github.com/mardous/BoomingMusic"
                         )
-                    },
-                    onDonateClick = { context.openUrl(DONATION_LINK) }
+                    }
                 )
             }
 
@@ -247,23 +253,35 @@ private fun FadenceMusicHeader(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxWidth()
     ) {
-        Image(
-            painter = painterResource(id = R.drawable.icon_web),
-            contentDescription = null,
-            modifier = Modifier.size(88.dp),
-            contentScale = ContentScale.Inside
-        )
-        Spacer(Modifier.height(8.dp))
-        Text(
-            text = stringResource(R.string.app_name),
-            style = MaterialTheme.typography.headlineMedium,
-            maxLines = 1
-        )
+        Surface(
+            shape = RoundedCornerShape(24.dp),
+            color = Color(0xFFFFFBF5),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Image(
+                painter = painterResource(
+                    id = R.drawable.fadence_logo_full
+                ),
+                contentDescription = stringResource(R.string.app_name),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(132.dp)
+                    .padding(
+                        horizontal = 28.dp,
+                        vertical = 16.dp
+                    ),
+                contentScale = ContentScale.Fit
+            )
+        }
+
+        Spacer(Modifier.height(12.dp))
+
         Text(
             text = stringResource(R.string.app_description),
             fontStyle = FontStyle.Italic,
             style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            textAlign = TextAlign.Center
         )
         Spacer(Modifier.height(24.dp))
         Box(
@@ -337,9 +355,7 @@ private fun FadenceMusicHeader(
 
 @Composable
 private fun AuthorSection(
-    onGitHubClick: () -> Unit = {},
-    onEmailClick: () -> Unit = {},
-    onDonateClick: () -> Unit = {}
+    onGitHubClick: () -> Unit = {}
 ) {
     Card(
         modifier = Modifier.fillMaxWidth(),
@@ -347,14 +363,15 @@ private fun AuthorSection(
             containerColor = MaterialTheme.colorScheme.surfaceContainer
         ),
         shape = MaterialTheme.shapes.large,
-        elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = 1.dp
+        )
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 16.dp)
-                .padding(top = 16.dp, bottom = 8.dp)
+                .padding(16.dp)
         ) {
             AboutContributorImage(
                 username = "fadlyas07",
@@ -366,53 +383,82 @@ private fun AuthorSection(
             Text(
                 text = stringResource(R.string.mardous),
                 style = MaterialTheme.typography.titleLarge,
-                fontWeight = FontWeight.Bold
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
             )
 
             Text(
-                text = stringResource(R.string.mardous_summary),
-                style = MaterialTheme.typography.bodyLarge
+                text = stringResource(
+                    R.string.fadence_maintainer_summary
+                ),
+                style = MaterialTheme.typography.bodyLarge,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                textAlign = TextAlign.Center
             )
-        }
 
-        Row(
-            horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally),
-            modifier = Modifier
-                .align(Alignment.CenterHorizontally)
-                .wrapContentSize()
-                .padding(8.dp)
-        ) {
-            if (!App.isPlayStoreBuild()) {
-                Button(
-                    onClick = onDonateClick,
-                    modifier = Modifier.wrapContentSize()
-                ) {
-                    Icon(
-                        painter = painterResource(R.drawable.ic_volunteer_activism_24dp),
-                        contentDescription = null
-                    )
-                    Spacer(Modifier.width(ButtonDefaults.IconSpacing))
-                    Text(stringResource(R.string.support_my_work))
-                }
-            }
+            Spacer(Modifier.height(8.dp))
 
             IconButton(
-                onClick = onGitHubClick,
-                modifier = Modifier.wrapContentSize()
+                onClick = onGitHubClick
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.ic_github_circle_24dp),
+                    painter = painterResource(
+                        R.drawable.ic_github_circle_24dp
+                    ),
                     contentDescription = "GitHub profile"
                 )
             }
+        }
+    }
+}
 
-            IconButton(
-                onClick = onEmailClick,
-                modifier = Modifier.wrapContentSize()
+@Composable
+private fun UpstreamSection(
+    onOpenClick: () -> Unit = {}
+) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(
+            containerColor =
+                MaterialTheme.colorScheme.surfaceContainer
+        ),
+        shape = MaterialTheme.shapes.large,
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = 1.dp
+        )
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(20.dp)
+        ) {
+            Text(
+                text = stringResource(
+                    R.string.original_project_name
+                ),
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold
+            )
+
+            Spacer(Modifier.height(8.dp))
+
+            Text(
+                text = stringResource(
+                    R.string.original_project_credit
+                ),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+
+            Spacer(Modifier.height(16.dp))
+
+            Button(
+                onClick = onOpenClick
             ) {
-                Icon(
-                    painter = painterResource(R.drawable.ic_email_24dp),
-                    contentDescription = "Write an email"
+                Text(
+                    stringResource(
+                        R.string.view_upstream_project
+                    )
                 )
             }
         }
@@ -587,18 +633,6 @@ private fun getAboutSections(
                 title = stringResource(R.string.report_bugs),
                 summary = stringResource(R.string.report_bugs_summary),
                 onClick = { context.openUrl(BuildConfig.ISSUE_TRACKER_LINK) }
-            ),
-            AboutItemData(
-                icon = { AboutItemIcon(painterResource(R.drawable.ic_language_24dp)) },
-                title = stringResource(R.string.help_with_translations),
-                summary = stringResource(R.string.help_with_translations_summary),
-                onClick = { context.openUrl(BuildConfig.TRANSLATIONS_LINK) }
-            ),
-            AboutItemData(
-                icon = { AboutItemIcon(painterResource(R.drawable.ic_telegram_24dp)) },
-                title = stringResource(R.string.telegram_community),
-                summary = stringResource(R.string.telegram_community_summary),
-                onClick = { context.openUrl(BuildConfig.TELEGRAM_COMMUNITY_LINK) }
             ),
             AboutItemData(
                 icon = { AboutItemIcon(painterResource(R.drawable.ic_share_24dp)) },

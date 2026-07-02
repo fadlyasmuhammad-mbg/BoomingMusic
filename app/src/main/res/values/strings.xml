@@ -1011,4 +1011,13 @@
     <string name="uncaught_error_restart_app">Restart app</string>
     <string name="uncaught_error_github">Open issue on GitHub</string>
     <string name="uncaught_error_send">Send report</string>
+
+    <!-- Fadence Music About page -->
+    <string name="maintainer">Maintainer</string>
+    <string name="fadence_maintainer_summary">Fadence Music maintainer</string>
+    <string name="original_project">Original project</string>
+    <string name="original_project_name">Booming Music</string>
+    <string name="original_project_credit">Fadence Music is based on the open-source Booming Music project by Christians Martínez Alvarado. Distributed under the GNU General Public License version 3.</string>
+    <string name="view_upstream_project">View upstream project</string>
+
 </resources>
